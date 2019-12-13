@@ -1,0 +1,59 @@
+{
+  "about": "This is a Zest script. For more details about Zest visit http://developer.mozilla.org/en-US/docs/Zest",
+  "zestVersion": "0.8",
+  "title": "badstore_login",
+  "description": "",
+  "prefix": "",
+  "type": "StandAlone",
+  "parameters": {
+    "tokenStart": "{{",
+    "tokenEnd": "}}",
+    "tokens": {},
+    "elementType": "ZestVariables"
+  },
+  "statements": [
+    {
+      "url": "http://localhost:8000/cgi-bin/badstore.cgi?action\u003dlogin",
+      "data": "email\u003dtest%40example.com\u0026passwd\u003dpassword",
+      "method": "POST",
+      "headers": "Content-Type: application/x-www-form-urlencoded\r\nContent-Length: 40\r\nOrigin: http://localhost:8000\r\nUpgrade-Insecure-Requests: 1\r\n",
+      "response": {
+        "url": "http://localhost:8000/cgi-bin/badstore.cgi?action\u003dlogin",
+        "headers": "HTTP/1.1 200 OK\r\nDate: Thu, 12 Dec 2019 09:38:54 GMT\r\nServer: Apache/2.4.10 (Debian)\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nSet-Cookie: SSOid\u003ddGVzdEBleGFtcGxlLmNvbTo1ZjRkY2MzYjVhYTc2NWQ2MWQ4MzI3ZGViODgyY2Y5OTp0ZXN0dXNl%0AcjpV%0A; path\u003d/\r\nETag: CPE1704TKS\r\nVary: Accept-Encoding\r\nKeep-Alive: timeout\u003d5, max\u003d100\r\nConnection: Keep-Alive\r\nContent-Type: text/html\r\n\r\n",
+        "body": "\n   \u003c!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"\u003e\n\t  \u003chtml xmlns\u003d\"http://www.w3.org/1999/xhtml\" lang\u003d\"en\" xml:lang\u003d\"en\"\u003e\n\t  \u003chead\u003e\n\t\t\u003ctitle\u003eWelcome to BadStore.net v1.2.3s - The most insecure store on the \u0027Net!\u003c/title\u003e\n\t\t\n\t\t\u003cmeta http-equiv\u003d\"Content-type\" content\u003d\"text/html;charset\u003dutf-8\" /\u003e\n\t\t\u003clink rel\u003d\"stylesheet\" type\u003d\"text/css\" href\u003d\"/css/global.css\" media\u003d\"all\" /\u003e\n\t  \u003c/head\u003e\n\t  \u003cbody\u003e\u003cbody\u003e \n   \u003cdiv id\u003d\"doc\"\u003e\n     \u003cdiv id\u003d\"hd\"\u003e\n       \u003ch1\u003e\u003ca href\u003d\"badstore.cgi\"\u003eWelcome to Badstore.net\u003c/a\u003e\u003c/h1\u003e        \n       \u003cdiv id\u003d\"hdbar\"\u003e\n         \u003cform method\u003d\"get\" action\u003d\"badstore.cgi\"\u003e\n           \u003cp\u003e            \n             \u003cinput type\u003d\"hidden\" name\u003d\"action\" value\u003d\"search\" /\u003e\n             \u003cinput type\u003d\"text\" id\u003d\"searchquery\" name\u003d\"searchquery\" size\u003d\"10\" value\u003d\"Search\" onfocus\u003d\"(this.value!\u003d\u0027Search\u0027||(this.value\u003d\u0027\u0027));\" onblur\u003d\"this.value||(this.value\u003d\u0027Search\u0027);\" /\u003e\n             \u003cinput type\u003d\"submit\" value\u003d\"Go\" /\u003e\n           \u003c/p\u003e\n         \u003c/form\u003e\n         \u003cdiv id\u003d\"hdcart\"\u003e\n           \u003ciframe src\u003d\"/cgi-bin/bsheader.cgi\" height\u003d\"20\" width\u003d\"370\" border\u003d\"0\" frameborder\u003d\"0\" noresize\u003d\"noresize\" style\u003d\"border:0;margin-top:8px;background-color:transparent\"\u003e\u003c/iframe\u003e          \n         \u003c/div\u003e\n         \u003cp id\u003d\"cart-link\"\u003e\u003ca href\u003d\"badstore.cgi?action\u003dcartview\"\u003eView Cart\u003c/a\u003e\u003c/p\u003e\n       \u003c/div\u003e\n     \u003c/div\u003e\n     \u003cdiv id\u003d\"bd\"\u003e\n       \u003cdiv id\u003d\"side\"\u003e\n         \u003ch3\u003eShop Badstore.net\u003c/h3\u003e\n         \u003cul\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi\"\u003eHome\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dwhatsnew\"\u003eWhat\u0027s New\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dguestbook\"\u003eSign Our Guestbook\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dviewprevious\"\u003eView Previous Orders\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003daboutus\"\u003eAbout Us\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dmyaccount\"\u003eMy Account\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dloginregister\"\u003eLogin / Register\u003c/a\u003e\u003c/li\u003e\n         \u003c/ul\u003e\n         \n         \u003ch3\u003eSuppliers Only\u003c/h3\u003e\n         \u003cul\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dsupplierlogin\"\u003eSupplier Login\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"/DoingBusiness/contract.doc\"\u003eSupplier Contract\u003c/a\u003e\u003c/li\u003e\n           \u003cli\u003e\u003ca href\u003d\"badstore.cgi?action\u003dsupplierproc\"\u003eSupplier Procedures\u003c/a\u003e\u003c/li\u003e\n         \u003c/ul\u003e\n         \n         \u003ch3\u003eReference\u003c/h3\u003e\n         \u003cul\u003e\n           \u003cli\u003e\n             \u003ca href\u003d\"/BadStore_net_v1_2_Manual.pdf\"\u003eBadStore.net Manual v1.2\u003c/a\u003e\n             \u003ca href\u003d\"/scanbot/scanbot.html\"\u003e\u003c/a\u003e\n           \u003c/li\u003e\n         \u003c/ul\u003e\n       \u003c/div\u003e\n       \n       \u003cdiv id\u003d\"main\"\u003e\u003ch1\u003e\u003cfont color\u003d#004b2c\u003eWelcome to BadStore.net!\u003c/font\u003e\u003c/h1\u003e\u003cp\u003e\u003cimg src\u003d\"/images/store1.jpg\" border\u003d\"0\" /\u003e\u003c/p\u003e      \u003c/div\u003e\n     \u003c/div\u003e\n     \n     \u003cdiv id\u003d\"ft\"\u003eBadStore v1.2.3s - Copyright \u0026copy; 2004-2005\u003c/div\u003e\n   \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e",
+        "statusCode": 200,
+        "responseTimeInMs": 78,
+        "elementType": "ZestResponse"
+      },
+      "assertions": [
+        {
+          "rootExpression": {
+            "code": 200,
+            "not": false,
+            "elementType": "ZestExpressionStatusCode"
+          },
+          "elementType": "ZestAssertion"
+        },
+        {
+          "rootExpression": {
+            "length": 2838,
+            "approx": 10,
+            "variableName": "response.body",
+            "not": false,
+            "elementType": "ZestExpressionLength"
+          },
+          "elementType": "ZestAssertion"
+        }
+      ],
+      "followRedirects": false,
+      "cookies": [],
+      "index": 1,
+      "enabled": true,
+      "elementType": "ZestRequest"
+    }
+  ],
+  "authentication": [],
+  "index": 0,
+  "enabled": true,
+  "elementType": "ZestScript"
+}
