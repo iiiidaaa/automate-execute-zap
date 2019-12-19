@@ -41,7 +41,7 @@ class ZapConfig :
         # TODO script関係はクラス化してロードなどもそこでやるほうがいい
         self.scripts = [{
                 # スクリプトの名前
-                'authScriptName' : 'pigg_login.zst',
+                'authScriptName' : 'login.zst',
                 # スクリプトのタイプ
                 'authScriptType' : 'authentication',
                 # スクリプトのエンジン ここら辺は有識者が書いたほうがいい
